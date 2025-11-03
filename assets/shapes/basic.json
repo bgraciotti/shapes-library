@@ -1,5 +1,28 @@
 [
   {
+    "id": "captured-group-9-mhfj1guo",
+    "name": "Group 9",
+    "category": "basic",
+    "description": "Captured from PowerPoint (Group) (Type: 1)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle",
+      "group"
+    ],
+    "preview": "basic/captured-group-9-mhfj1guo.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 0.384,
+      "y": 1.446,
+      "w": 1.528,
+      "h": 5.229,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1761955877364.pptx",
+    "nativeOnly": true
+  },
+  {
     "id": "captured-graphic-42-mhfik2bs",
     "name": "Red Lasso",
     "category": "basic",
