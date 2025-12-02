@@ -1,0 +1,26 @@
+[
+  {
+    "id": "captured-straight-connector-4-mieljef0",
+    "name": "V360",
+    "category": "flowchart",
+    "description": "Captured from PowerPoint (Group) (Type: -2)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle",
+      "straight",
+      "connector"
+    ],
+    "preview": "flowchart/captured-straight-connector-4-mieljef0.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 0.417,
+      "y": 1.526,
+      "w": 5.787,
+      "h": 2,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1764076389162.pptx",
+    "nativeOnly": true
+  }
+]

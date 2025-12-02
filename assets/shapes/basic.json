@@ -1,25 +1,114 @@
 [
   {
-    "id": "captured-group-9-mhfj1guo",
-    "name": "Group 9",
+    "id": "captured-rectangle-16-mi34voj3",
+    "name": "Abordagem #3",
+    "category": "basic",
+    "description": "Captured from PowerPoint (Group) (Type: 1)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle"
+    ],
+    "preview": "basic/captured-rectangle-16-mi34voj3.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 0.403,
+      "y": 4.31,
+      "w": 2.292,
+      "h": 0.777,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1763383268183.pptx",
+    "nativeOnly": true
+  },
+  {
+    "id": "captured-rectangle-30-mi34y6ke",
+    "name": "Detalhe Abordagem #3",
+    "category": "basic",
+    "description": "Captured from PowerPoint (Group) (Type: 1)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle"
+    ],
+    "preview": "basic/captured-rectangle-30-mi34y6ke.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 1,
+      "y": 1.143,
+      "w": 13.15,
+      "h": 5.758,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1763383399679.pptx",
+    "nativeOnly": true
+  },
+  {
+    "id": "captured-rectangle-288-mhzai723",
+    "name": "Exemplo Delivery: Coverage",
     "category": "basic",
     "description": "Captured from PowerPoint (Group) (Type: 1)",
     "tags": [
       "captured",
       "basic",
       "rectangle",
-      "group"
+      "288"
     ],
-    "preview": "basic/captured-group-9-mhfj1guo.png",
+    "preview": "basic/captured-rectangle-288-mhzai723.png",
     "pptxDefinition": {
       "type": "rectangle",
-      "x": 0.384,
-      "y": 1.446,
-      "w": 1.528,
-      "h": 5.229,
+      "x": 9.425,
+      "y": 1.535,
+      "w": 3.519,
+      "h": 5.4,
       "adj": []
     },
-    "nativePptx": "native/shape_captured_1761955877364.pptx",
+    "nativePptx": "native/shape_captured_1763150856943.pptx",
+    "nativeOnly": true
+  },
+  {
+    "id": "captured-rectangle-6-mhzak7qt",
+    "name": "Exemplo Delivery: Iniciativa Estratégica",
+    "category": "basic",
+    "description": "Captured from PowerPoint (Group) (Type: 1)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle"
+    ],
+    "preview": "basic/captured-rectangle-6-mhzak7qt.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 0.699,
+      "y": 1.392,
+      "w": 11.935,
+      "h": 5.586,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1763150956274.pptx",
+    "nativeOnly": true
+  },
+  {
+    "id": "captured-table-6-mhzatht5",
+    "name": "Plano Diário",
+    "category": "basic",
+    "description": "Captured from PowerPoint (Group) (Type: -2)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle",
+      "table"
+    ],
+    "preview": "basic/captured-table-6-mhzatht5.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 0.417,
+      "y": 1.906,
+      "w": 7.362,
+      "h": 5.02,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1763151388188.pptx",
     "nativeOnly": true
   },
   {

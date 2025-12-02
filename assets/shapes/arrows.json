@@ -1,5 +1,51 @@
 [
   {
+    "id": "captured-group-9-mhfj1guo",
+    "name": "Abordagem #1",
+    "category": "arrows",
+    "description": "Captured from PowerPoint (Group) (Type: 1)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle",
+      "group"
+    ],
+    "preview": "arrows/captured-group-9-mhfj1guo.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 0.384,
+      "y": 1.446,
+      "w": 1.528,
+      "h": 5.229,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1761955877364.pptx",
+    "nativeOnly": true
+  },
+  {
+    "id": "captured-freeform-35-mhkskhus",
+    "name": "Abordagem #2",
+    "category": "arrows",
+    "description": "Captured from PowerPoint (Group) (Type: 138)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle",
+      "freeform"
+    ],
+    "preview": "arrows/captured-freeform-35-mhkskhus.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 8.448,
+      "y": 2.222,
+      "w": 3.386,
+      "h": 2.126,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1762274210805.pptx",
+    "nativeOnly": true
+  },
+  {
     "id": "captured-textbox-14-mhfhn330",
     "name": "Cond. Comercial",
     "category": "arrows",
