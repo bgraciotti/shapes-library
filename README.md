@@ -38,7 +38,7 @@ Browse and insert editable PowerPoint shapes into your presentations with ease. 
 1. Open Raycast and search for "Search Shapes"
 2. Browse or search for the shape you want
 3. Press Enter to open the shape in PowerPoint
-4. Copy the shape in PowerPoint (Ctrl+C / Cmd+C)
+4. Copy the shape in PowerPoint (Ctrl+C)
 5. Paste into your presentation - the shape is fully editable!
 
 ### Capturing Shapes
@@ -51,24 +51,24 @@ Browse and insert editable PowerPoint shapes into your presentations with ease. 
 ## Keyboard Shortcuts
 
 ### In Shape Browser
-- **Enter**: Insert shape into active PowerPoint (Windows) or open in PowerPoint
-- **Ctrl/Cmd + C**: Copy shape to clipboard
-- **Ctrl/Cmd + O**: Open shape in PowerPoint (new window)
-- **Ctrl/Cmd + E**: Edit shape (name, category, tags)
-- **Ctrl/Cmd + M**: Open Manage Categories
-- **Ctrl/Cmd + X**: Delete shape from library
-- **Ctrl/Cmd + R**: Refresh shape library
-- **Ctrl/Cmd + I**: Copy preview image to clipboard
-- **Ctrl/Cmd + F**: Show shape file in Explorer/Finder
+- **Enter**: Insert shape into active PowerPoint or open in PowerPoint
+- **Ctrl + C**: Copy shape to clipboard
+- **Ctrl + O**: Open shape in PowerPoint (new window)
+- **Ctrl + E**: Edit shape (name, category, tags)
+- **Ctrl + M**: Open Manage Categories
+- **Ctrl + X**: Delete shape from library
+- **Ctrl + R**: Refresh shape library
+- **Ctrl + I**: Copy preview image to clipboard
+- **Ctrl + F**: Show shape file in File Explorer
 
 ### In Manage Categories
 - **Enter**: Rename selected category
-- **Ctrl/Cmd + N**: Add new category
-- **Ctrl/Cmd + O**: Open Shape Picker filtered by selected category
+- **Ctrl + N**: Add new category
+- **Ctrl + O**: Open Shape Picker filtered by selected category
 - **Ctrl + X**: Delete category (only if empty)
 
 ### In Shape Capture
-- **Ctrl/Cmd + S**: Save captured shape to library
+- **Ctrl + S**: Save captured shape to library
 - **Esc**: Cancel capture
 
 ## Requirements
@@ -123,7 +123,7 @@ To ensure all captured shapes maintain your company's branding (colors, fonts, t
 Categories can be fully customized using the **Manage Categories** command:
 
 1. Open Raycast and search for "Manage Categories"
-2. Or press `Cmd+M` from the Shape Picker
+2. Or press `Ctrl+M` from the Shape Picker
 
 **Available actions:**
 - **Add New Category**: Create categories with custom names and IDs
