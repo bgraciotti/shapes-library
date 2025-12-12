@@ -85,8 +85,9 @@ export type ShapeType =
 
 /**
  * Shape category for organization
+ * Now dynamic - categories are loaded from {LibraryRoot}/categories.json
  */
-export type ShapeCategory = "basic" | "arrows" | "flowchart" | "callouts";
+export type ShapeCategory = string;
 
 /**
  * Fill properties for shapes
@@ -181,7 +182,6 @@ export interface Preferences {
   skipNativeSave?: boolean;
   forceExactShapes?: boolean;
   useLibraryDeck?: boolean;
-  defaultCategory: "all" | ShapeCategory;
   templatePath?: string;
 }
 

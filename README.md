@@ -6,7 +6,7 @@ Browse and insert editable PowerPoint shapes into your presentations with ease. 
 
 ### Browse & Insert Shapes
 - **Visual Grid Browser**: Browse shapes with high-quality PNG thumbnail previews
-- **Customizable Categories**: Organize shapes into categories with custom names (edit `src/config/categories.json`)
+- **Customizable Categories**: Organize shapes into categories with custom names (managed via "Manage Categories" command)
 - **Search & Filter**: Quickly find shapes by name, tags, or category
 - **100% Editable**: Shapes remain fully editable vectors in PowerPoint
 - **Multiple Insert Methods**:
@@ -55,10 +55,17 @@ Browse and insert editable PowerPoint shapes into your presentations with ease. 
 - **Ctrl/Cmd + C**: Copy shape to clipboard
 - **Ctrl/Cmd + O**: Open shape in PowerPoint (new window)
 - **Ctrl/Cmd + E**: Edit shape (name, category, tags)
+- **Ctrl/Cmd + M**: Open Manage Categories
 - **Ctrl/Cmd + X**: Delete shape from library
 - **Ctrl/Cmd + R**: Refresh shape library
 - **Ctrl/Cmd + I**: Copy preview image to clipboard
 - **Ctrl/Cmd + F**: Show shape file in Explorer/Finder
+
+### In Manage Categories
+- **Enter**: Rename selected category
+- **Ctrl/Cmd + N**: Add new category
+- **Ctrl/Cmd + O**: Open Shape Picker filtered by selected category
+- **Ctrl + X**: Delete category (only if empty)
 
 ### In Shape Capture
 - **Ctrl/Cmd + S**: Save captured shape to library
@@ -89,7 +96,6 @@ Access preferences through Raycast Settings → Extensions → PowerPoint Shapes
 - **Force Exact Shapes Only**: Require native PPTX files for 100% fidelity (default: enabled)
 - **Use PPTX Library Deck**: Store all shapes in a single PPTX deck for faster access (default: enabled)
 - **Skip native PPTX save at capture**: Faster capture by skipping native file save (default: enabled)
-- **Default Category**: Category to show when opening Search Shapes (default: Basic Shapes)
 
 ### Using a Custom PowerPoint Template (Recommended for Corporate Use)
 
@@ -112,18 +118,19 @@ To ensure all captured shapes maintain your company's branding (colors, fonts, t
 
 **Without a template**, shapes will use Office's default theme, which may change colors and fonts.
 
-### Customizing Category Names
+### Managing Categories
 
-Edit `src/config/categories.json` to change how categories are displayed:
+Categories can be fully customized using the **Manage Categories** command:
 
-```json
-{
-  "basic": "Basic Shapes",
-  "arrows": "Arrows & Connectors",
-  "flowchart": "Flowchart Elements",
-  "callouts": "Callouts & Annotations"
-}
-```
+1. Open Raycast and search for "Manage Categories"
+2. Or press `Cmd+M` from the Shape Picker
+
+**Available actions:**
+- **Add New Category**: Create categories with custom names and IDs
+- **Rename Category**: Change the display name of any category
+- **Delete Category**: Remove empty categories (categories with shapes cannot be deleted)
+
+Categories are stored in `{LibraryRoot}/categories.json` and persist across sessions.
 
 ## Development
 
@@ -154,23 +161,22 @@ npm run fix-lint
 shapeslibrary/
 ├── src/
 │   ├── shape-picker.tsx          # Main search and browse interface
-│   ├── capture-shape.tsx          # Shape capture from PowerPoint
-│   ├── import-library.tsx         # Import shapes from ZIP
-│   ├── config/
-│   │   └── categories.json        # Category display names
+│   ├── capture-shape.tsx         # Shape capture from PowerPoint
+│   ├── manage-categories.tsx     # Category management UI
 │   ├── generator/
-│   │   └── pptxGenerator.ts       # PowerPoint file generation
+│   │   └── pptxGenerator.ts      # PowerPoint file generation
 │   ├── types/
-│   │   └── shapes.ts              # TypeScript type definitions
+│   │   └── shapes.ts             # TypeScript type definitions
 │   └── utils/
-│       ├── cache.ts               # Shape caching logic
-│       ├── deck.ts                # PPTX deck management
-│       ├── paths.ts               # File path utilities
-│       ├── previewGenerator.ts    # PNG preview generation (Windows)
-│       ├── shapeSaver.ts          # Shape persistence
-│       └── svgPreview.ts          # SVG preview generation
-├── assets/                        # Shape preview images (organized by category)
-├── native/                        # Native PPTX files for exact shapes
+│       ├── cache.ts              # Shape caching logic
+│       ├── categoryManager.ts    # Dynamic category management
+│       ├── deck.ts               # PPTX deck management
+│       ├── paths.ts              # File path utilities
+│       ├── previewGenerator.ts   # PNG preview generation (Windows)
+│       ├── shapeSaver.ts         # Shape persistence
+│       └── svgPreview.ts         # SVG preview generation
+├── assets/                       # Shape preview images (organized by category)
+├── native/                       # Native PPTX files for exact shapes
 ├── scripts/
 │   └── batch-generate-previews.ps1  # Batch preview generation (Windows)
 └── package.json

@@ -7,6 +7,7 @@ import { join, basename, dirname } from "path";
 import { environment } from "@raycast/api";
 import { getShapesDir as getShapesDirUtil, getAssetsDir, getLibraryRoot } from "./paths";
 import { ShapeInfo, ShapeCategory } from "../types/shapes";
+import { loadCategories, getCategoryIds } from "./categoryManager";
 
 /**
  * Get path to shapes directory
@@ -138,17 +139,17 @@ export function removeShapeFromLibrary(id: string, category: ShapeCategory): voi
 /**
  * Get count of shapes in each category
  */
-export function getShapeCounts(): Record<ShapeCategory, number> {
-  const categories: ShapeCategory[] = ["basic", "arrows", "flowchart", "callouts"];
+export function getShapeCounts(): Record<string, number> {
+  const categoryIds = getCategoryIds();
 
   const counts: Record<string, number> = {};
 
-  categories.forEach((category) => {
+  categoryIds.forEach((category) => {
     const shapes = loadCategoryShapes(category);
     counts[category] = shapes.length;
   });
 
-  return counts as Record<ShapeCategory, number>;
+  return counts;
 }
 
 /**
@@ -204,7 +205,7 @@ export function movePreviewToCategory(shape: ShapeInfo, oldCategory: ShapeCatego
  */
 export function repairOrphanedPreviews(force = false): number {
   const assetsDir = getAssetsDir();
-  const categories: ShapeCategory[] = ["basic", "arrows", "flowchart", "callouts"];
+  const categories = getCategoryIds();
 
   let repairedCount = 0;
 

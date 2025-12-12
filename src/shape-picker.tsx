@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Grid, ActionPanel, Action, showToast, Toast, getPreferenceValues, Icon, confirmAlert, Alert, showInFinder, Form, useNavigation } from "@raycast/api";
+import { Grid, ActionPanel, Action, showToast, Toast, getPreferenceValues, Icon, confirmAlert, Alert, showInFinder, Form, useNavigation, launchCommand, LaunchType } from "@raycast/api";
 import { readFileSync, existsSync, mkdirSync, readdirSync, copyFileSync, renameSync } from "fs";
 import { join } from "path";
 import { environment } from "@raycast/api";
@@ -13,25 +13,17 @@ import { generatePreview } from "./utils/previewGenerator";
 import { generateSvgPreview, svgToDataUrl } from "./utils/svgPreview";
 import { spawn } from "child_process";
 import { tmpdir } from "os";
-import categoryNames from "./config/categories.json";
+import { loadCategories, getCategoryDisplayName, CategoryConfig } from "./utils/categoryManager";
 
 /**
- * Category options for dropdown
- * Names are loaded from config/categories.json for easy customization
+ * Build category options for dropdown dynamically
  */
-const categoryOptions: CategoryOption[] = [
-  { title: "All Shapes", value: "all" },
-  { title: categoryNames.basic, value: "basic" },
-  { title: categoryNames.arrows, value: "arrows" },
-  { title: categoryNames.flowchart, value: "flowchart" },
-  { title: categoryNames.callouts, value: "callouts" },
-];
-
-/**
- * Get display name for a category
- */
-function getCategoryDisplayName(category: ShapeCategory): string {
-  return categoryNames[category] || category;
+function buildCategoryOptions(): CategoryOption[] {
+  const categories = loadCategories();
+  return [
+    { title: "All Shapes", value: "all" },
+    ...categories.map((c) => ({ title: c.name, value: c.id })),
+  ];
 }
 
 /**
@@ -120,10 +112,9 @@ function EditShapeForm({ shape, onSave }: { shape: ShapeInfo; onSave: () => void
         autoFocus
       />
       <Form.Dropdown id="category" title="Category" defaultValue={shape.category}>
-        <Form.Dropdown.Item value="basic" title={categoryNames.basic} />
-        <Form.Dropdown.Item value="arrows" title={categoryNames.arrows} />
-        <Form.Dropdown.Item value="flowchart" title={categoryNames.flowchart} />
-        <Form.Dropdown.Item value="callouts" title={categoryNames.callouts} />
+        {loadCategories().map((cat) => (
+          <Form.Dropdown.Item key={cat.id} value={cat.id} title={cat.name} />
+        ))}
       </Form.Dropdown>
       <Form.TextField
         id="tags"
@@ -379,16 +370,17 @@ async function loadShapesFromCategory(category: ShapeCategory, useCache: boolean
  * @param useCache - Whether to use cache
  */
 async function loadAllShapes(useCache: boolean): Promise<ShapeInfo[]> {
-  const categories: ShapeCategory[] = ["basic", "arrows", "flowchart", "callouts"];
+  const categories = loadCategories();
+  const categoryIds = categories.map((c) => c.id);
 
-  const results = await Promise.allSettled(categories.map((cat) => loadShapesFromCategory(cat, useCache)));
+  const results = await Promise.allSettled(categoryIds.map((cat) => loadShapesFromCategory(cat, useCache)));
 
   const allShapes: ShapeInfo[] = [];
   results.forEach((result, index) => {
     if (result.status === "fulfilled") {
       allShapes.push(...result.value);
     } else {
-      console.error(`Failed to load ${categories[index]} shapes:`, result.reason);
+      console.error(`Failed to load ${categoryIds[index]} shapes:`, result.reason);
     }
   });
 
@@ -397,14 +389,23 @@ async function loadAllShapes(useCache: boolean): Promise<ShapeInfo[]> {
 }
 
 /**
+ * Arguments passed to the command
+ */
+interface CommandArguments {
+  category?: string;
+}
+
+/**
  * Main shape picker component
  */
-export default function ShapePicker() {
+export default function ShapePicker(props: { arguments: CommandArguments }) {
+  const { category: initialCategory } = props.arguments;
   const preferences = getPreferenceValues<Preferences>();
   const { push } = useNavigation();
   const [isLoading, setIsLoading] = useState(true);
   const [shapes, setShapes] = useState<ShapeInfo[]>([]);
-  const [selectedCategory, setSelectedCategory] = useState<string>(preferences.defaultCategory);
+  const [selectedCategory, setSelectedCategory] = useState<string>(initialCategory || "all");
+  const [categoryOptions, setCategoryOptions] = useState<CategoryOption[]>(buildCategoryOptions());
 
   /**
    * Load shapes based on selected category
@@ -453,6 +454,7 @@ export default function ShapePicker() {
    */
   async function handleRefresh() {
     clearCache();
+    setCategoryOptions(buildCategoryOptions()); // Reload categories
     await loadShapes(true);
   }
 
@@ -706,6 +708,18 @@ try {
                       onAction={() => push(<ImportLibraryForm />)}
                     />
                   </ActionPanel.Submenu>
+                  <Action
+                    title="Manage Categories"
+                    icon={Icon.List}
+                    shortcut={{ modifiers: ["cmd"], key: "m" }}
+                    onAction={async () => {
+                      try {
+                        await launchCommand({ name: "manage-categories", type: LaunchType.UserInitiated });
+                      } catch {
+                        await showToast({ style: Toast.Style.Failure, title: "Command not found", message: "Manage Categories command is not available" });
+                      }
+                    }}
+                  />
                   <Action
                     title="Refresh Shapes"
                     icon={Icon.ArrowClockwise}

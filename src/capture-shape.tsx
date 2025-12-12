@@ -23,6 +23,7 @@ import { mapToShapeInfo, getShapeTypeName } from "./utils/shapeMapper";
 import { addShapeToLibrary, shapeExists, updateShapeInLibrary } from "./utils/shapeSaver";
 import { getLibraryRoot, getShapesDir as getShapesDirUtil } from "./utils/paths";
 import { ShapeInfo, ShapeCategory, Preferences } from "./types/shapes";
+import { loadCategories } from "./utils/categoryManager";
 
 interface CaptureFormValues {
   shapeName: string;
@@ -125,10 +126,9 @@ function SaveForm({ shape }: { shape: ShapeInfo }) {
 
       <Form.TextField id="shapeName" title="Shape Name" placeholder="Enter a descriptive name" defaultValue={shape.name} />
       <Form.Dropdown id="category" title="Category" defaultValue={shape.category}>
-        <Form.Dropdown.Item value="basic" title="Basic Shapes" icon={Icon.Box} />
-        <Form.Dropdown.Item value="arrows" title="Arrows" icon={Icon.ArrowRight} />
-        <Form.Dropdown.Item value="flowchart" title="Flowchart" icon={Icon.Network} />
-        <Form.Dropdown.Item value="callouts" title="Callouts" icon={Icon.SpeechBubble} />
+        {loadCategories().map((cat) => (
+          <Form.Dropdown.Item key={cat.id} value={cat.id} title={cat.name} />
+        ))}
       </Form.Dropdown>
       <Form.TextArea id="description" title="Description" placeholder="Optional description" defaultValue={shape.description} />
       <Form.TextField id="tags" title="Tags" placeholder="tag1, tag2, tag3" defaultValue={shape.tags?.join(", ") || ""} />
