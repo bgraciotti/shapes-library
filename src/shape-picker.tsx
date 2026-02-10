@@ -673,8 +673,8 @@ try {
 
         let previewSource: string;
         if (pngExists) {
-          // Use PNG if available (better quality and detail)
-          previewSource = pngPath;
+          // Convert Windows path to file:// URL (required for Raycast Windows v0.44+)
+          previewSource = `file:///${pngPath.replace(/\\/g, "/")}`;
         } else {
           // Fallback to SVG for instant preview
           const svg = generateSvgPreview(shape);
