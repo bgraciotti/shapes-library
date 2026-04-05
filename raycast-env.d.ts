@@ -22,8 +22,6 @@ type ExtensionPreferences = {
   "useLibraryDeck": boolean,
   /** Skip native PPTX save at capture - Avoid saving a PPTX during capture (faster, more reliable). Native insert still works and you can save later. */
   "skipNativeSave": boolean,
-  /** Default Category - Category to show by default */
-  "defaultCategory": "all" | "basic" | "arrows" | "flowchart" | "callouts",
   /** PowerPoint Template Path (Optional) - Path to a PPTX template with your company theme. If provided, all captures will use this template's theme, colors, and fonts. Leave empty to use Office default theme. */
   "templatePath"?: string
 }
@@ -36,12 +34,19 @@ declare namespace Preferences {
   export type ShapePicker = ExtensionPreferences & {}
   /** Preferences accessible in the `capture-shape` command */
   export type CaptureShape = ExtensionPreferences & {}
+  /** Preferences accessible in the `manage-categories` command */
+  export type ManageCategories = ExtensionPreferences & {}
 }
 
 declare namespace Arguments {
   /** Arguments passed to the `shape-picker` command */
-  export type ShapePicker = {}
+  export type ShapePicker = {
+  /** Category ID */
+  "category": string
+}
   /** Arguments passed to the `capture-shape` command */
   export type CaptureShape = {}
+  /** Arguments passed to the `manage-categories` command */
+  export type ManageCategories = {}
 }
 

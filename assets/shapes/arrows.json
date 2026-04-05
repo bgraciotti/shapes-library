@@ -46,6 +46,74 @@
     "nativeOnly": true
   },
   {
+    "id": "captured-group-9-mivmi02j",
+    "name": "Abordagem #4",
+    "category": "arrows",
+    "description": "Captured from PowerPoint (Group) (Type: -2)",
+    "tags": [
+      "tech",
+      "ops",
+      "operating model"
+    ],
+    "preview": "arrows/captured-group-9-mivmi02j.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 0.417,
+      "y": 1.605,
+      "w": 12.551,
+      "h": 5.477,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1765105931108.pptx",
+    "nativeOnly": true
+  },
+  {
+    "id": "captured-group-13-mmqse94c",
+    "name": "Abordagem #5",
+    "category": "arrows",
+    "description": "Captured from PowerPoint (Group) (Type: -2)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle",
+      "group"
+    ],
+    "preview": "arrows/captured-group-13-mmqse94c.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 0.417,
+      "y": 1.74,
+      "w": 12.595,
+      "h": 5.001,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1773520628716.pptx",
+    "nativeOnly": true
+  },
+  {
+    "id": "captured-title-12-mj0ju8lf",
+    "name": "Accenture em FS",
+    "category": "arrows",
+    "description": "Captured from PowerPoint (Group) (Type: 1)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle",
+      "title"
+    ],
+    "preview": "arrows/captured-title-12-mj0ju8lf.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 0.428,
+      "y": 1.937,
+      "w": 2.581,
+      "h": 1.616,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1765403790950.pptx",
+    "nativeOnly": true
+  },
+  {
     "id": "captured-textbox-14-mhfhn330",
     "name": "Cond. Comercial",
     "category": "arrows",
@@ -66,6 +134,29 @@
       "adj": []
     },
     "nativePptx": "native/shape_captured_1761953520697.pptx",
+    "nativeOnly": true
+  },
+  {
+    "id": "captured-group-18-mkwyb5mb",
+    "name": "Contexto",
+    "category": "arrows",
+    "description": "Captured from PowerPoint (Group) (Type: -2)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle",
+      "group"
+    ],
+    "preview": "arrows/captured-group-18-mkwyb5mb.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 0.417,
+      "y": 1.837,
+      "w": 6.299,
+      "h": 0.455,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1769539792805.pptx",
     "nativeOnly": true
   },
   {
@@ -110,6 +201,52 @@
       "adj": []
     },
     "nativePptx": "native/shape_captured_1761953267460.pptx",
+    "nativeOnly": true
+  },
+  {
+    "id": "captured-table-5-mkjt0tuh",
+    "name": "Cronograma",
+    "category": "arrows",
+    "description": "Captured from PowerPoint (Group) (Type: -2)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle",
+      "table"
+    ],
+    "preview": "arrows/captured-table-5-mkjt0tuh.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 0.417,
+      "y": 1.455,
+      "w": 11.686,
+      "h": 5.531,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1768744853458.pptx",
+    "nativeOnly": true
+  },
+  {
+    "id": "captured-group-2-mivmbjq2",
+    "name": "Dimensões de Crescimento",
+    "category": "arrows",
+    "description": "Captured from PowerPoint (Group) (Type: -2)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle",
+      "group"
+    ],
+    "preview": "arrows/captured-group-2-mivmbjq2.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 0.47,
+      "y": 1.511,
+      "w": 12.474,
+      "h": 5.414,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1765105625663.pptx",
     "nativeOnly": true
   },
   {
@@ -226,7 +363,7 @@
   },
   {
     "id": "captured-textbox-5-mhfi5uiq",
-    "name": "Liderança",
+    "name": "Liderança #1",
     "category": "arrows",
     "description": "Captured from PowerPoint (Group) (Type: 1)",
     "tags": [
@@ -245,6 +382,52 @@
       "adj": []
     },
     "nativePptx": "native/shape_captured_1761954401442.pptx",
+    "nativeOnly": true
+  },
+  {
+    "id": "captured-group-7-mkjtzij4",
+    "name": "Liderança #2",
+    "category": "arrows",
+    "description": "Captured from PowerPoint (Group) (Type: -2)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle",
+      "group"
+    ],
+    "preview": "arrows/captured-group-7-mkjtzij4.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 0.417,
+      "y": 1.715,
+      "w": 3.78,
+      "h": 0.77,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1768746473858.pptx",
+    "nativeOnly": true
+  },
+  {
+    "id": "captured-group-12-mlh10tpg",
+    "name": "Non-binding",
+    "category": "arrows",
+    "description": "Captured from PowerPoint (Group) (Type: 1)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle",
+      "group"
+    ],
+    "preview": "arrows/captured-group-12-mlh10tpg.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 0.48,
+      "y": 0.575,
+      "w": 12.373,
+      "h": 5.975,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1770753677145.pptx",
     "nativeOnly": true
   },
   {
@@ -296,28 +479,26 @@
     "nativeOnly": true
   },
   {
-    "id": "captured-rounded-rectangle-mhfhl7jj",
+    "id": "captured-group-3-mkmzwcyh",
     "name": "Serviços ACN",
     "category": "arrows",
-    "description": "Captured from PowerPoint (Group) (Type: 5)",
+    "description": "Captured from PowerPoint (Group) (Type: -2)",
     "tags": [
       "captured",
       "basic",
       "rectangle",
-      "rounded"
+      "group"
     ],
-    "preview": "arrows/captured-rounded-rectangle-mhfhl7jj.png",
+    "preview": "arrows/captured-group-3-mkmzwcyh.png",
     "pptxDefinition": {
       "type": "rectangle",
-      "x": 0.505,
-      "y": 1.649,
-      "w": 2.875,
-      "h": 3.976,
-      "adj": [
-        0.041
-      ]
+      "x": 1,
+      "y": 1.641,
+      "w": 13.333,
+      "h": 5.672,
+      "adj": []
     },
-    "nativePptx": "native/shape_captured_1761953438615.pptx",
+    "nativePptx": "native/shape_captured_1768937804794.pptx",
     "nativeOnly": true
   },
   {

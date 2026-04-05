@@ -44,6 +44,29 @@
     "nativeOnly": true
   },
   {
+    "id": "captured-group-3-mmkwh5zq",
+    "name": "Detalhe Mapa de Capacidades",
+    "category": "basic",
+    "description": "Captured from PowerPoint (Group) (Type: -2)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle",
+      "group"
+    ],
+    "preview": "basic/captured-group-3-mmkwh5zq.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": -0.296,
+      "y": 1.916,
+      "w": 13.619,
+      "h": 4.975,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1773164688064.pptx",
+    "nativeOnly": true
+  },
+  {
     "id": "captured-rectangle-288-mhzai723",
     "name": "Exemplo Delivery: Coverage",
     "category": "basic",
@@ -137,5 +160,27 @@
       }
     },
     "nativePptx": "native/shape_captured_1761955065890.pptx"
+  },
+  {
+    "id": "captured-rectangle-70-mmjp9rxz",
+    "name": "Tabela Comparativa",
+    "category": "basic",
+    "description": "Captured from PowerPoint (Group) (Type: 1)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle"
+    ],
+    "preview": "basic/captured-rectangle-70-mmjp9rxz.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 0.391,
+      "y": 1.28,
+      "w": 0.917,
+      "h": 0.394,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1773092109313.pptx",
+    "nativeOnly": true
   }
 ]

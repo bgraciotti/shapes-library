@@ -1,0 +1,20 @@
+{
+  "categories": [
+    {
+      "id": "basic",
+      "name": "Basic Shapes"
+    },
+    {
+      "id": "arrows",
+      "name": "Proposals"
+    },
+    {
+      "id": "flowchart",
+      "name": "Visuals"
+    },
+    {
+      "id": "callouts",
+      "name": "Legal"
+    }
+  ]
+}

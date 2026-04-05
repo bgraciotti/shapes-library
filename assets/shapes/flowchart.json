@@ -1,5 +1,28 @@
 [
   {
+    "id": "captured-group-6-mmkwfp1f",
+    "name": "Mapa Capacidades",
+    "category": "flowchart",
+    "description": "Captured from PowerPoint (Group) (Type: -2)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle",
+      "group"
+    ],
+    "preview": "flowchart/captured-group-6-mmkwfp1f.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 1,
+      "y": 1.657,
+      "w": 13.333,
+      "h": 5.251,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1773164618265.pptx",
+    "nativeOnly": true
+  },
+  {
     "id": "captured-straight-connector-4-mieljef0",
     "name": "V360",
     "category": "flowchart",
