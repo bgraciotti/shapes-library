@@ -46,26 +46,27 @@
     "nativeOnly": true
   },
   {
-    "id": "captured-group-58-mpfdk857",
-    "name": "Arrow",
+    "id": "captured-group-284-mqcq3yx4",
+    "name": "Arrows",
     "category": "basic",
     "description": "Captured from PowerPoint (Group) (Type: -2)",
     "tags": [
       "captured",
       "basic",
       "rectangle",
-      "group"
+      "group",
+      "284"
     ],
-    "preview": "basic/captured-group-58-mpfdk857.png",
+    "preview": "basic/captured-group-284-mqcq3yx4.png",
     "pptxDefinition": {
       "type": "rectangle",
-      "x": 7.379,
-      "y": 2.104,
-      "w": 0.095,
-      "h": 4.882,
+      "x": 8.152,
+      "y": 2.087,
+      "w": 0.138,
+      "h": 4.823,
       "adj": []
     },
-    "nativePptx": "native/shape_captured_1779360936255.pptx",
+    "nativePptx": "native/shape_captured_1781377398585.pptx",
     "nativeOnly": true
   },
   {
