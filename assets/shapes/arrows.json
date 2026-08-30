@@ -92,6 +92,29 @@
     "nativeOnly": true
   },
   {
+    "id": "captured-group-6-mt79jzma",
+    "name": "Abordagem #7",
+    "category": "arrows",
+    "description": "Captured from PowerPoint (Group) (Type: -2)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle",
+      "group"
+    ],
+    "preview": "arrows/captured-group-6-mt79jzma.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 0.384,
+      "y": 1.477,
+      "w": 12.56,
+      "h": 5.515,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1787577606624.pptx",
+    "nativeOnly": true
+  },
+  {
     "id": "captured-title-12-mj0ju8lf",
     "name": "Accenture em FS",
     "category": "arrows",
@@ -162,7 +185,7 @@
   },
   {
     "id": "captured-rectangle-5-mhfia3cn",
-    "name": "Contexto & Objetivos",
+    "name": "Contexto & Objetivos #1",
     "category": "arrows",
     "description": "Captured from PowerPoint (Group) (Type: 1)",
     "tags": [
@@ -180,6 +203,29 @@
       "adj": []
     },
     "nativePptx": "native/shape_captured_1761954599804.pptx",
+    "nativeOnly": true
+  },
+  {
+    "id": "captured-group-49-msyk5jlq",
+    "name": "Contexto & Objetivos #2",
+    "category": "arrows",
+    "description": "Captured from PowerPoint (Group) (Type: -2)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle",
+      "group"
+    ],
+    "preview": "arrows/captured-group-49-msyk5jlq.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 0.417,
+      "y": 1.544,
+      "w": 12.5,
+      "h": 5.412,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1787051213481.pptx",
     "nativeOnly": true
   },
   {
@@ -202,6 +248,29 @@
       "adj": []
     },
     "nativePptx": "native/shape_captured_1761953267460.pptx",
+    "nativeOnly": true
+  },
+  {
+    "id": "captured-group-4-msyk6sg6",
+    "name": "Credit Products",
+    "category": "arrows",
+    "description": "Captured from PowerPoint (Group) (Type: -2)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle",
+      "group"
+    ],
+    "preview": "arrows/captured-group-4-msyk6sg6.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 1,
+      "y": 1.432,
+      "w": 13.333,
+      "h": 5.576,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1787051272107.pptx",
     "nativeOnly": true
   },
   {
@@ -251,25 +320,49 @@
     "nativeOnly": true
   },
   {
-    "id": "captured-rectangle-21-mhfi6q67",
-    "name": "Equipe",
+    "id": "captured-group-8-msyk2y80",
+    "name": "Equipe #1",
     "category": "arrows",
-    "description": "Captured from PowerPoint (Group) (Type: 1)",
+    "description": "Captured from PowerPoint (Group) (Type: -2)",
     "tags": [
       "captured",
       "basic",
-      "rectangle"
+      "rectangle",
+      "group"
     ],
-    "preview": "arrows/captured-rectangle-21-mhfi6q67.png",
+    "preview": "arrows/captured-group-8-msyk2y80.png",
     "pptxDefinition": {
       "type": "rectangle",
-      "x": 5.692,
-      "y": 3.642,
-      "w": 1.22,
-      "h": 0.53,
+      "x": 0.417,
+      "y": 1.907,
+      "w": 12.553,
+      "h": 4.556,
       "adj": []
     },
-    "nativePptx": "native/shape_captured_1761954432869.pptx",
+    "nativePptx": "native/shape_captured_1787051092924.pptx",
+    "nativeOnly": true
+  },
+  {
+    "id": "captured-group-9-msyk93af",
+    "name": "Equipe #2",
+    "category": "arrows",
+    "description": "Captured from PowerPoint (Group) (Type: -2)",
+    "tags": [
+      "captured",
+      "basic",
+      "rectangle",
+      "group"
+    ],
+    "preview": "arrows/captured-group-9-msyk93af.png",
+    "pptxDefinition": {
+      "type": "rectangle",
+      "x": 0.399,
+      "y": 1.451,
+      "w": 12.667,
+      "h": 5.535,
+      "adj": []
+    },
+    "nativePptx": "native/shape_captured_1787051378859.pptx",
     "nativeOnly": true
   },
   {
